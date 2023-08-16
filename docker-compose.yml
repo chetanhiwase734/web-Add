@@ -6,7 +6,7 @@ services:
     volumes:
       - "/mnt/wars:/usr/local/apache2/htdocs" 
     ports:
-      - "80-90:80"
+      - "80:80"
     
   my-tomcat:
 
@@ -14,5 +14,5 @@ services:
     volumes:
       - "/mnt/vol-1:/usr/local/tomcat/webapps"
     ports:
-      - "8080-8085:8080"    
+      - "8080:8080"    
 
