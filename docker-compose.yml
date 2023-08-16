@@ -1,0 +1,18 @@
+version: '3'
+services:
+  my-httpd:
+
+    image: "httpd"
+    volumes:
+      - "/mnt/wars:/usr/local/apache2/htdocs" 
+    ports:
+      - "80-90:80"
+    
+  my-tomcat:
+
+    image: "tomcat:9"
+    volumes:
+      - "/mnt/vol-1:/usr/local/tomcat/webapps"
+    ports:
+      - "8080-8085:8080"    
+
